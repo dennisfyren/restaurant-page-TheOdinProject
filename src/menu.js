@@ -13,14 +13,20 @@ class menuItem{
 
 let lasagna = new menuItem("Lasagna", "Classic Dish from Italy", "135");
 let hamburger = new menuItem("Hamburger", "It doesn't get much easier", "110");
+
+
+
+
 lasagna.addItem(lasagna);
 hamburger.addItem(hamburger);
 
-console.log(menuList)
-
-export const showMenu = function loadMenu(){
+export const showMenu = function showMenu(){
+    const box = document.querySelector("#box");
+    while (box.hasChildNodes()) {
+        box.removeChild(box.firstChild);
+    }
     menuList.forEach((dish) => {
-        const box = document.querySelector("#box");
+        
         const div = document.createElement("div");
         const menuBox = box.appendChild(div);
 

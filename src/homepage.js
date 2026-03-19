@@ -1,4 +1,5 @@
 import headerImg from "./assets/header.jpg";
+import { showHome } from "./home.js";
 import "./menu.js";
 import { showMenu } from "./menu.js";
 
@@ -30,13 +31,14 @@ function createElements(){
 };
 
 createElements();
+showHome();
 
 function test(){
     console.log("Testing");
 }
 
 const home = document.querySelector("#home");
-home.addEventListener("click", test);
+home.addEventListener("click", showHome);
 
 const menu = document.querySelector("#menu");
 menu.addEventListener("click", showMenu);

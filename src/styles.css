@@ -59,7 +59,7 @@ nav button:hover {
     width: 80%;
     align-self: center;
     color: white;
-    background-color: rgba(35, 37, 58, 0.767);
+    background-color: rgba(35, 37, 58, 0.938);
     border-radius: 0.6rem;
     justify-items: center;
     font-size: 1.1rem;
@@ -80,9 +80,6 @@ nav button:hover {
     padding-bottom: 1rem;
     margin-bottom: 0.4rem;
     border-bottom: 1px solid white;
-}
-#box div :last-child::after {
-    content: " SEK"
 }
 #box p {
     text-align: center;
