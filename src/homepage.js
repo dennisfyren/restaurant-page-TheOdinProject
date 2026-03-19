@@ -1,6 +1,7 @@
 import headerImg from "./assets/header.jpg";
-import { showHome } from "./home.js";
 import "./menu.js";
+
+import { showHome } from "./home.js";
 import { showMenu } from "./menu.js";
 
 
