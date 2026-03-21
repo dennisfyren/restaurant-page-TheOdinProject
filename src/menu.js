@@ -11,14 +11,20 @@ class menuItem{
     }
 }
 
-let lasagna = new menuItem("Lasagna", "Classic Dish from Italy", "135");
-let hamburger = new menuItem("Hamburger", "It doesn't get much easier", "110");
+let lasagna = new menuItem("Lasagna", "Classic Dish from Italy", "135 :-");
+let hamburger = new menuItem("Hamburger", "It doesn't get much easier", "110 :-");
+let schnitzel = new menuItem("Schnitzel", "German classic", "125 :-");
+let pastabolognese = new menuItem("Pasta Bolognese", "Like carbonara, but better", "108 :-");
+let pastacarbonara = new menuItem("Pasta Carbonara", "Like Bolognese, but better", "108 :-");
 
 
 
 
 lasagna.addItem(lasagna);
 hamburger.addItem(hamburger);
+schnitzel.addItem(schnitzel);
+pastabolognese.addItem(pastabolognese);
+pastacarbonara.addItem(pastacarbonara);
 
 export const showMenu = function showMenu(){
     const box = document.querySelector("#box");
